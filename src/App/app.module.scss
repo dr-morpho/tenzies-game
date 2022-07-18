@@ -1,0 +1,130 @@
+@import '../styles/variables.scss';
+
+.wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  max-width: 750px;
+  width: 100%;
+  background-color: $background;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title > button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  opacity: 0.4;
+
+  &:hover {
+    transition: 0.2s all ease-in-out;
+    opacity: 0.2;
+  }
+}
+
+.title > h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $color_1;
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+}
+
+.title > p {
+  color: $color_1;
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.popupmenu {
+  overflow: hidden;
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  background-color: #fff;
+  padding: 15px;
+  max-width: 160px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.popupmenu > p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.popupmenu > button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2px 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+  background-color: $background;
+  color: white;
+  &:hover {
+    transition: 0.2s all ease-in;
+    opacity: 0.8;
+  }
+}
+
+.rollbutton {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.rollbutton > h2 {
+  margin: 0;
+  font-size: 25px;
+  color: $color_2;
+}
+
+.boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
